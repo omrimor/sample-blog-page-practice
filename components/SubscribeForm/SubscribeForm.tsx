@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { SubscriptionIllustration } from "../illustrations";
 
 const formFieldConfig = [
@@ -31,6 +32,7 @@ const formFieldConfig = [
 ];
 
 export const SubscribeForm: React.FC = () => {
+  const formRef = useRef<HTMLFormElement>(null);
   return (
     <section className="bg-brandPrimary-200 text-white flex md:flex-row flex-col-reverse mb-16 rounded-2xl p-10 md:p-20">
       <div className="grow flex flex-col gap-6">
@@ -42,8 +44,17 @@ export const SubscribeForm: React.FC = () => {
         <form
           className="grid grid-col-1 md:grid-cols-2 grid-rows-2 max-w-xl text-lg"
           noValidate
-          onSubmit={(event: React.FormEvent<HTMLFormElement>) => {
+          ref={formRef}
+          onSubmit={async (event: React.FormEvent<HTMLFormElement>) => {
             event.preventDefault();
+            if (!formRef.current) return;
+            const formData = new FormData(formRef?.current);
+            const formObject = Object.fromEntries(formData.entries());
+            if (!formObject.email) {
+              const inputs = formRef.current.elements;
+              inputs[0]?.focus();
+              console.error("Email is required.");
+            }
           }}
         >
           {formFieldConfig.map((field) => (
@@ -60,7 +71,7 @@ export const SubscribeForm: React.FC = () => {
           <div className="flex justify-center md:justify-start md:col-span-2 w-full">
             <button
               type="submit"
-              className="capitalize w-36 bg-white text-brandPrimary-200 rounded-lg p-3 mt-10"
+              className="capitalize font-semibold bg-white hover:bg-white/90 text-brandPrimary-300 rounded-2xl py-3 px-14 mt-10"
             >
               subscribe
             </button>
