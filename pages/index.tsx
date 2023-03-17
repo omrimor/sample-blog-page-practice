@@ -40,7 +40,7 @@ const BlogRootPage: NextPage<{
         <section className="mt-20">
           <FeaturedPost post={featuredPost} />
         </section>
-        <section className="my-12">
+        <section className="mt-12 mb-20">
           <h4 className="text-xl font-semibold mb-10 hidden md:block text-slate-800">
             Latest Posts
           </h4>
@@ -51,7 +51,7 @@ const BlogRootPage: NextPage<{
           </PostsGrid>
         </section>
         <SubscribeForm />
-        <section className="my-12">
+        <section className="mt-12 mb-20">
           <PostsGrid>
             {posts.map((post) => (
               <PostPreviewCard key={post.slug} post={post} />
