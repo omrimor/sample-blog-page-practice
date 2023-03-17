@@ -1,0 +1,59 @@
+[
+  {
+    "slug": "compliance-is-more",
+    "title": "Cybrize's Diana Kelley: Why compliance is more than a checkbox exercise, and how to integrate it into your security toolkit",
+    "description": "Thomas chats with Diana Kelley, a true pioneer in cybersecurity and Chief Security Officer & Strategy Officer at Cybrize, about the challenges of leading changes in security operations today.",
+    "thumbnailImgSrc": "https://www.datocms-assets.com/55802/1678277726-diannakelley.png?auto=format",
+    "isFeatured": true,
+    "date": "2023-03-01T00:00:00.000Z",
+    "tags": ["news", "tutorials"]
+  },
+  {
+    "slug": "whats-new",
+    "title": "What's new in Tines: March edition",
+    "description": "Check out our most recent product updates!",
+    "thumbnailImgSrc": "https://www.datocms-assets.com/55802/1670600121-tines-product-update-email-header.png?auto=format",
+    "date": "2023-03-01T00:00:00.000Z",
+    "tags": ["engineering", "product updates"]
+  },
+  {
+    "slug": "meet-the-team",
+    "title": "Five questions with Rosie Halpin, Sales Engineer",
+    "description": "Get to know Rosie Halpin, a sales engineer passionate about helping prospective customers leverage Tines to eliminate some of their most pressing challenges and achieve their business goals.",
+    "thumbnailImgSrc": "https://www.datocms-assets.com/55802/1678284390-rosie.jpg?auto=format",
+    "date": "2023-02-20T00:00:00.000Z",
+    "tags": ["tutorials", "engineering", "product updates"]
+  },
+  {
+    "slug": "how-to-get-soc-2-compliance",
+    "title": "How Tines achieved SOC 2 compliance in record time, saving 250+ human hours",
+    "description": "With two automation Stories, our IT team achieved SOC 2 compliance in record time — cutting overall effort by 250 hours and completing the entire process within four months.",
+    "thumbnailImgSrc": "https://www.datocms-assets.com/55802/1677513201-how-tines-achieved-its-soc-2-status-in-record-time-saving-250-human-hours.png?auto=format",
+    "date": "2023-02-15T00:00:00.000Z",
+    "tags": ["news", "tutorials", "inside Tines"]
+  },
+  {
+    "slug": "how-to-adapt-as-a-ciso",
+    "title": "Lacework's Andreas Schneider: How to adapt as a CISO and the value of security failures",
+    "description": "In this episode of the Future of Security Operations podcast, Thomas interviews Andreas Schneider - the Field CISO EMEA at Lacework.",
+    "thumbnailImgSrc": "https://www.datocms-assets.com/55802/1677259440-andreas.png?auto=format",
+    "date": "2023-02-10T00:00:00.000Z",
+    "tags": ["inside Tines", "engineering", "product updates"]
+  },
+  {
+    "slug": "how-to-attract-diverse-talent",
+    "title": "GitHub’s Jacob DePriest: How to attract and retain more diverse security talent",
+    "description": "On this episode of the Future of Security Operations podcast, Thomas speaks with Jacob DePriest, VP & Deputy Chief Security Officer at GitHub.",
+    "thumbnailImgSrc": "https://www.datocms-assets.com/55802/1676547227-ep17-jacob-depriest.png?auto=format",
+    "date": "2023-02-05T00:00:00.000Z",
+    "tags": ["tutorials", "engineering"]
+  },
+  {
+    "slug": "rethink-security-marketing",
+    "title": "It’s time to rethink how we market and sell security products",
+    "description": "As organizations seek better ways to protect against attacks, let’s seek better ways to improve the cybersecurity community as well.",
+    "thumbnailImgSrc": "https://www.datocms-assets.com/55802/1675788584-2.png?auto=format",
+    "date": "2023-02-01T00:00:00.000Z",
+    "tags": ["news"]
+  }
+]
