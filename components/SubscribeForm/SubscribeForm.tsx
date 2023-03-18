@@ -34,7 +34,7 @@ const formFieldConfig = [
 export const SubscribeForm: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
   return (
-    <section className="bg-brandPrimary-200 text-white flex md:flex-row flex-col-reverse mb-24 rounded-2xl p-10 md:p-20">
+    <aside className="bg-brandPrimary-200 text-white flex md:flex-row flex-col-reverse mb-24 rounded-2xl p-10 md:p-20 gap-4 md:gap-0">
       <div className="grow flex flex-col gap-6">
         <h2 className="text-4xl font-semibold text-center md:text-left">
           World class ideas
@@ -86,9 +86,9 @@ export const SubscribeForm: React.FC = () => {
           </a>
         </p>
       </div>
-      <div className="flex items-center justify-center px-6">
+      <div className="flex items-center justify-center md:pl-6 lg:pl-0">
         <SubscriptionIllustration />
       </div>
-    </section>
+    </aside>
   );
 };
