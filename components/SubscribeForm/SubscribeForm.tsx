@@ -51,9 +51,12 @@ export const SubscribeForm: React.FC = () => {
             const formData = new FormData(formRef?.current);
             const formObject = Object.fromEntries(formData.entries());
             if (!formObject.email) {
-              const inputs = formRef.current.elements;
-              // @ts-expect-error - we know that the first element is an input
-              inputs[0]?.focus();
+              const emailInput = formRef.current.querySelector(
+                'input[name="email"]'
+              );
+              if (emailInput instanceof HTMLInputElement) {
+                emailInput.focus();
+              }
               console.error("Email is required.");
             }
           }}
